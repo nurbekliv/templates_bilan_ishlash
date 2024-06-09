@@ -1,0 +1,15 @@
+<!-- add_person.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Person</title>
+</head>
+<body>
+    <h2>yangi talaba qoshing</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">qoshish</button>
+    </form>
+</body>
+</html>
